@@ -16,8 +16,9 @@ static const uint8_t LED_BUILTIN = 2;
 
 static const uint8_t KEY_BUILTIN = 0;
 
-static const uint8_t TX = 1;
-static const uint8_t RX = 3;
+static const uint8_t  UARTA =  0,  RX  =  3,  TX  =  1;
+static const uint8_t  UARTB =  1,  RXB = 16,  TXB = 17;
+static const uint8_t  UARTC =  2,  RXC =  9,  TXC = 10;  // dont use external flash
 
 static const uint8_t SDA = 21;
 static const uint8_t SCL = 22;
