@@ -131,6 +131,7 @@ public:
 
     uint32_t setDebugFlags( uint32_t setBits, uint32_t resetBits);
     bool busy();
+    void end();
 };
 
 extern TwoWire Wire;

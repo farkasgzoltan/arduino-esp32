@@ -361,5 +361,10 @@ bool TwoWire::busy(void){
   return ((i2cGetStatus(i2c) & 16 )==16);
 }
 
+void TwoWire::end()
+{
+    i2cRelease(i2c);
+}
+
 TwoWire Wire = TwoWire(0);
 TwoWire Wire1 = TwoWire(1);
